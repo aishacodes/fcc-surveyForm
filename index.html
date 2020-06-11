@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fcc Survey Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1 id="title">freeCodeCamp Survey Form</h1><br>
+            <p id="description"><em>Thank you for taking the time to help us improve the platform</em></p>
+        </header>
+        <form action="" id="survey-form">
+            <div>
+                <label for="name" id="name-label">Name</label>
+                <input class="form-control" type="text" id="name" placeholder="Enter your name" required>
+            </div>
+            <div>
+                <label for="email" id="email-label">Email</label>
+                <input class="form-control" type="email" id="email" placeholder="Enter your Email" required>
+            </div>
+            <div>
+                <label for="age" id="number-label">Age</label>
+                <input class="form-control" type="number" id="number" placeholder="Enter your age" min="10" max="99">
+            </div>
+            <div>
+                <label for="role">Which option best describes your current role?</label>
+                <select class="form-control" id="dropdown" name="role" required>
+                    <option disabled selected value>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div>
+                <label for="">Would you recommend freeCodeCamp to a friend?</label><br>
+                <input type="radio" name="recommendation" value="definitely">Definitely<br/>
+                <input type="radio" name="recommendation" value="maybe"> Maybe <br>
+                <input type="radio" name="recommendation" value="notsure">Not sure
+            </div>
+            <div>
+                <label for="favfeature">
+                    What is your favorite feature of freeCodeCamp?
+                </label>
+                <select name="" id="" class="form-control">
+                    <option disabled selected value>Select an option</option>
+                    <option value=""></option>
+                </select>
+            </div>
+            <div>
+                <label for="improvement">What would you like to see improved? (Check all that apply) </label><br>
+                <input type="checkbox" name="improvement" value="Front-end"> Front-end Projects<br>
+                <input type="checkbox" name="improvement" value="Back-end"> Back-end Projects<br>
+                <input type="checkbox" name="improvement" value="data-visualization">Data Visualization<br> <input type="checkbox" name="improvement" value="Challenges"> Challenges<br>
+                <input type="checkbox" name="improvement" value="open-source"> Open Source Community<br>
+                <input type="checkbox" name="improvement" value="Gitter-helproom"> Gitter help rooms<br>
+                <input type="checkbox" name="improvement" value="Videos"> Videos<br>
+                <input type="checkbox" name="improvement" value="city-meetup"> City Meetups<br>
+                <input type="checkbox" name="improvement" value="wiki-forum"> Wiki Forum<br>
+                <input type="checkbox" name="improvement" value="Additional-courses"> Additional Courses<br>
+
+            </div>
+            <div>
+                <label for="comments">Any comments or suggestions?</label>
+                <textarea rows="10" class="form-control"></textarea>
+            </div>
+            <button name="submit" id="submit" class="form-control">Submit</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js "></script>
+</body>
+
+</html>
