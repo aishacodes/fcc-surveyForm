@@ -1,5 +1,5 @@
 body {
-    background: url(../media/survey-form-background.jpeg) #2f6fad96;
+    background: url(../media/survey-form-background.jpeg) #ad2f5f96;
     background-blend-mode: lighten;
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,7 +34,7 @@ div {
     margin-bottom: 20px;
 }
 
-.title {}
+
 
 .form-control {
     width: 100%;
